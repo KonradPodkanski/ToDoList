@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Playpen Sans", cursive;
+  overflow-x: Hidden;
+  background-color: #fefae0;
+}
+
+i {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+hr {
+  height: 1px;
+  background-color: #d4a373;
+  border: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #d4a373;
+}
+.card .top-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem 0 0.8rem;
+  width: 100%;
+  background-color: #faedcd;
+}
+.card .top-section .icon i {
+  font-size: 7rem;
+}
+.card .top-section .buttons {
+  position: absolute;
+  text-align: center;
+  display: none;
+}
+.card .top-section .buttons .menu-btn {
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+.card .top-section .buttons .menu-btn:nth-child(1) {
+  margin-top: 1rem;
+}
+.card .top-section .dropdown-menu {
+  transition: transform 0.3s;
+}
+.card .btn {
+  cursor: pointer;
+}
+.card .bottom-note-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2rem;
+}
+.card .bottom-note-section .note {
+  position: relative;
+  margin: 0.5rem;
+  width: 178px;
+  max-height: 200px;
+  padding: 0.4rem;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #d4a373;
+  background-color: rgba(233, 237, 201, 0.4);
+}
+.card .bottom-note-section .note .options h2 {
+  text-align: center;
+}
+.card .bottom-note-section .note .options i {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 3px;
+  top: 4px;
+}
+.card .bottom-note-section .note .options i:nth-child(2) {
+  right: 0;
+}
+.card .bottom-note-section .note .options i:nth-child(3) {
+  left: 0;
+}
+
+.dropdown-menu:hover {
+  transform: rotate(-270deg);
+}
+
+.dropdown-menu:hover .buttons {
+  display: block;
+}
+
+.dropdown-menu:hover .menu-btn {
+  animation: expand 0.6s forwards;
+}
+
+.dropdown-menu:hover .menu-btn {
+  animation-delay: 0.1s;
+}
+
+.dropdown-menu:hover .menu-btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dropdown-menu:hover .menu-btn:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.btn:hover {
+  color: #745a40;
+}
+
+.menu-btn:hover {
+  color: #d4a373;
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: rotate(0);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+}/*# sourceMappingURL=main.css.map */
