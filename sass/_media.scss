@@ -11,7 +11,7 @@
 			.dropdown-menu {
 				margin: 0 0.7rem 0 0.7rem;
 				.fa-gear {
-					font-size: 40px;
+					font-size: 4rem;
 				}
 			}
 		}
@@ -24,11 +24,32 @@
 	}
 }
 @media (min-width: 320px) and (max-width: 359px) {
-	.card .bottom-note-section {
-		margin: 0.6rem;
-	}
-	.card .bottom-note-section .note {
-		width: 145px;
+	.card {
+		.top-section {
+			h1 {
+				font-size: 4rem;
+			}
+			.dropdown-menu {
+				margin: 0;
+				.fa-gear {
+					
+					font-size: 4rem;
+				}
+			}
+
+			.menu-btn {
+               
+				i {
+					font-size: 4rem;
+				}
+			}
+		}
+		.bottom-note-section {
+			margin: 0.6rem;
+			.note {
+				width: 145px;
+			}
+		}
 	}
 }
 @media (min-width: 375px) {
