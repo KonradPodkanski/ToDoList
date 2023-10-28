@@ -1,9 +1,17 @@
+// breakpoints for mobilephones
 @media (max-width: 420px) {
 	.card {
 		.top-section {
 			.icon {
 				i {
-					font-size: 5rem;
+					font-size: 4rem;
+				}
+			}
+			.icon,
+			.dropdown-menu {
+				margin: 0 0.7rem 0 0.7rem;
+				.fa-gear {
+					font-size: 40px;
 				}
 			}
 		}
@@ -43,7 +51,7 @@
 		}
 	}
 }
-@media (min-width: 412px) and (max-width: 420px) {
+@media (min-width: 395px) and (max-width: 420px) {
 	.card {
 		.bottom-note-section {
 			margin: 1rem;
@@ -53,3 +61,4 @@
 		}
 	}
 }
+//breakpoints for tablets
