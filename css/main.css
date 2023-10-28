@@ -77,8 +77,8 @@ hr {
 .card .bottom-note-section .note {
   position: relative;
   margin: 0.5rem;
-  width: 178px;
-  max-height: 200px;
+  width: 190px;
+  height: 150px;
   padding: 0.4rem;
   overflow: hidden;
   border-radius: 5px;
@@ -141,5 +141,48 @@ hr {
   to {
     opacity: 1;
     transform: rotate(-90deg);
+  }
+}
+@media (max-width: 420px) {
+  .card .top-section .icon i {
+    font-size: 5rem;
+  }
+  .card .bottom-note-section {
+    margin: 1rem;
+  }
+  .card .bottom-note-section .note {
+    width: 160px;
+  }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+  .card .bottom-note-section {
+    margin: 0.6rem;
+  }
+  .card .bottom-note-section .note {
+    width: 145px;
+  }
+}
+@media (min-width: 375px) {
+  .card .bottom-note-section {
+    margin: 1.4rem;
+  }
+  .card .bottom-note-section .note {
+    width: 165px;
+  }
+}
+@media (min-width: 390px) and (max-width: 395px) {
+  .card .bottom-note-section {
+    margin: 1.2rem;
+  }
+  .card .bottom-note-section .note {
+    width: 175px;
+  }
+}
+@media (min-width: 412px) and (max-width: 420px) {
+  .card .bottom-note-section {
+    margin: 1rem;
+  }
+  .card .bottom-note-section .note {
+    width: 186px;
   }
 }/*# sourceMappingURL=main.css.map */
