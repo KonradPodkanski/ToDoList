@@ -13,14 +13,29 @@
 </head>
 
 <body>
+    <div class="add-task-pop-up">
+        <div class="title-container container ">
+            <label for="title">Title of note</label>
+            <input placeholder="Title..." class="title" type="text" id="title">
+        </div>
+        <div class="text-container container">
+            <label for="text">Text of note</label>
+            <textarea class="text" id="text" placeholder="Type your task..." name="text" rows="7" cols="33"></textarea>
+        </div>
+        <div class="add-task-buttons">
+            <div class="add-task-btn save">save</div>
+            <div class="add-task-btn cancel">cancel</div>
+        </div>
+    </div>
     <div class="card">
+
         <div class="top-section">
             <div class="icon"><i class="fa-regular fa-note-sticky"></i></div>
             <h1>ToDoList</h1>
             <div class=" btn dropdown-menu">
                 <i class="fa-solid fa-gear"></i>
                 <div class="buttons">
-                    <div title="Add to the list" class="btn  menu-btn menu-btn   add-btn"><i
+                    <div title="Add to the list" class="btn  menu-btn menu-btn add-btn"><i
                             class="fa-solid fa-plus"></i>
                     </div>
                     <div title="sort options" class="btn  menu-btn  settings-btn"><i class="fa-solid fa-sliders"></i>
