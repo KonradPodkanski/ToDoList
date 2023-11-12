@@ -22,7 +22,6 @@
 			}
 		}
 		.dropdown-menu {
-			
 			width: 60px;
 			text-align: center;
 			transition: transform 0.3s;
@@ -98,6 +97,9 @@
 	}
 	.active {
 		transform: rotate(270deg);
+	}
+	.active-color {
+		color: $fifth-color;
 	}
 
 	//--------------------Pop-up--------------------//

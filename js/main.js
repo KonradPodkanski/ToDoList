@@ -1,5 +1,6 @@
 let optionBtn;
-let menuBtns;
+// let menuBtns;
+
 let menuSingleBtn;
 let noteSection;
 let dropDownMenu;
@@ -10,10 +11,11 @@ const main = () => {
 };
 const prepareDOMElements = () => {
 	optionBtn = document.querySelector(".fa-gear");
-	menuBtns = document.querySelector(".buttons");
+	// menuBtns = document.querySelector(".buttons");
+
 	menuSingleBtn = document.querySelectorAll(".menu-btn");
 	noteSection = document.querySelector(".bottom-note-section");
-	dropDownMenu = document.querySelector(".buttons");
+	dropDownMenu = document.querySelector(".dropdown-menu");
 	addTaskPopUp = document.querySelector(".add-task-pop-up");
 };
 const prepareDOMEvents = () => {
@@ -27,6 +29,7 @@ const showOptions = () => {
 		menuSingleBtn.forEach(e => {
 			e.classList.toggle("wrap-animation");
 		});
+		dropDownMenu.classList.toggle("active-color");
 		optionBtn.classList.toggle("active");
 	}
 };
